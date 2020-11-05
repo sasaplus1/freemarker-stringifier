@@ -23,5 +23,11 @@ module.exports = {
     ecmaVersion: 2020,
     sourceType: 'module'
   },
-  root: true
+  root: true,
+  settings: {
+    node: {
+      allowModules: ['freemarker-parser'],
+      tryExtensions: ['.d.ts', '.ts', '.js', '.json', '.node']
+    }
+  }
 };
