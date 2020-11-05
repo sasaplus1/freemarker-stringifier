@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: ['eslint:recommended', 'plugin:recommended-script', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:node/recommended-script', 'prettier'],
   overrides: [
     {
       extends: [
