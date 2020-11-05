@@ -16,6 +16,7 @@
     "typescript": "^4.0.5"
   },
   "license": "MIT",
+  "main": "./index.js",
   "private": true,
   "readmeFilename": "README.md",
   "repository": {
@@ -32,5 +33,6 @@
     "lint:eslint": "eslint --cache --ext .ts .",
     "lint:prettier": "prettier --check --parser typescript '*.ts'",
     "watch": "tsc --watch"
-  }
+  },
+  "types": "./index.d.ts"
 }
