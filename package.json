@@ -35,12 +35,12 @@
   "scripts": {
     "build": "tsc",
     "fix": "run-s fix:eslint fix:prettier",
-    "fix:eslint": "eslint --ext .ts --fix .",
-    "fix:prettier": "prettier --write --parser typescript '*.ts'",
+    "fix:eslint": "eslint --ext .js,.ts --fix .",
+    "fix:prettier": "prettier --write --parser typescript '*.{js,ts}'",
     "fixpack": "npx fixpack",
     "lint": "run-s lint:eslint lint:prettier",
-    "lint:eslint": "eslint --cache --ext .ts .",
-    "lint:prettier": "prettier --check --parser typescript '*.ts'",
+    "lint:eslint": "eslint --cache --ext .js,.ts .",
+    "lint:prettier": "prettier --check --parser typescript '*.{js,ts}'",
     "test": "mocha",
     "watch": "tsc --watch"
   },
