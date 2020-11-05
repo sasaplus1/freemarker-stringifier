@@ -16,6 +16,9 @@
     "prettier": "^2.1.2",
     "typescript": "^4.0.5"
   },
+  "files": [
+    "index.*"
+  ],
   "license": "MIT",
   "main": "./index.js",
   "private": true,
