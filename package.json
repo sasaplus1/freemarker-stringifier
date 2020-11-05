@@ -23,6 +23,14 @@
     "url": "https://github.com/sasaplus1/freemarker-stringifier.git"
   },
   "scripts": {
-    "fixpack": "npx fixpack"
+    "build": "tsc",
+    "fix": "run-s fix:eslint fix:prettier",
+    "fix:eslint": "eslint --ext .ts --fix .",
+    "fix:prettier": "prettier --write --parser typescript '*.ts'",
+    "fixpack": "npx fixpack",
+    "lint": "run-s lint:eslint lint:prettier",
+    "lint:eslint": "eslint --cache --ext .ts .",
+    "lint:prettier": "prettier --check --parser typescript '*.ts'",
+    "watch": "tsc --watch"
   }
 }
